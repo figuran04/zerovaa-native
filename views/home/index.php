@@ -14,7 +14,7 @@ ob_start();
   }
 </style>
 
-<h2>Produk Terlaris</h2>
+<h2>Produk Terbaru</h2>
 <div class="product-grid">
   <?php include '../../includes/product_card.php'; ?>
 </div>

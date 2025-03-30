@@ -27,12 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Upload gambar (jika ada)
   $image = null;
   if (!empty($_FILES['image']['name'])) {
-    $image_name = time() . "_" . basename($_FILES['image']['name']);
+    $image_name = time();  // Menggunakan time() sebagai nama gambar
     $target_dir = "../../uploads/";
     $target_file = $target_dir . $image_name;
 
     if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-      $image = $image_name;
+      $image = $image_name;  // Gunakan nama gambar baru
     }
   }
 

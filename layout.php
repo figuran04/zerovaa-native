@@ -15,7 +15,18 @@ $hideHeaderFooter = preg_match('#views/(login|register|admin)#', $currentPath);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?php echo isset($pageTitle) ? $pageTitle . " | Zerovaa" : "Zerovaa"; ?></title>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
   <link rel="stylesheet" href="<?= $BASE_URL; ?>/global.css">
 </head>
 

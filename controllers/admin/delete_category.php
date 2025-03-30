@@ -2,7 +2,7 @@
 require_once '../../config/init.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['is_admin'] != 1) {
-  header("Location: ../login");
+  header("Location: ../../views/login");
   exit;
 }
 
@@ -15,11 +15,11 @@ if (isset($_GET['id'])) {
 
   if ($stmt->execute()) {
     $_SESSION['success'] = "Kategori berhasil dihapus!";
-    header("Location: ./?status=success");
+    header("Location: ../../views/admin/?status=success");
     exit;
   } else {
     $_SESSION['error'] = "Terjadi kesalahan saat menghapus kategori!";
-    header("Location: ./?status=error");
+    header("Location: ../../views/admin/?status=error");
     exit;
   }
 }

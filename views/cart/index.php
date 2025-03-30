@@ -24,7 +24,9 @@ ob_start();
         <tr>
           <td class="p-2">
             <img src="../../uploads/<?= $cart['image'] ?>" alt="<?= $cart['name'] ?>" class="w-20 aspect-square object-cover">
-            <?= htmlspecialchars($cart['name']) ?>
+            <a href="../product_detail?id=<?= htmlspecialchars($cart['product_id']) ?>" class="underline">
+              <?= htmlspecialchars($cart['name']) ?>
+            </a>
           </td>
           <td class="p-2">Rp<?= number_format($cart['price'], 0, ',', '.') ?></td>
           <td class="p-2">

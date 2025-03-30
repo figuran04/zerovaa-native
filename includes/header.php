@@ -7,15 +7,16 @@
       <a href="../categories">Kategori</a>
     </li>
   </ul>
-
-  <input type="text" placeholder="Cari produk..." class="w-full max-w-xs py-2 px-4 bg-gray-100 rounded-full outline-emerald-200">
+  <form action="../search" method="get" class="relative">
+    <input type="text" name="q" placeholder="Cari produk..." class="w-full max-w-xs py-2 px-4 bg-gray-100 rounded-full outline-emerald-200" required>
+  </form>
 
   <nav>
     <ul class="flex gap-8 items-center flex-nowrap">
       <?php if (isset($_SESSION['user_id'])) : ?>
         <li><a href="../../controllers/orders/fetch_orders.php">Riwayat Order</a></li>
         <li><a href="../cart">Keranjang</a></li>
-        <li><a href="../profile">Profil</a></li>
+        <li><a href="../profile?id=<?= $_SESSION['user_id']; ?>">Profil</a></li>
 
         <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) : ?> <!-- Cek apakah session is_admin ada dan == 1 -->
           <li><a href="../admin">Dashboard Admin</a></li> <!-- Link ke halaman dashboard admin -->
@@ -26,7 +27,5 @@
         <li><a href="../register">Daftar</a></li>
       <?php endif; ?>
     </ul>
-
-
   </nav>
 </header>

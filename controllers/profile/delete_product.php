@@ -1,8 +1,8 @@
 <?php
 require_once '../../config/init.php';
 
-if (!isset($_SESSION['user_id']) || $_SESSION['is_admin'] != 1) {
-  header("Location: ../login");
+if (!isset($_SESSION['user_id'])) {
+  header("Location: ../../views/login");
   exit;
 }
 
@@ -15,11 +15,11 @@ if (isset($_GET['id'])) {
 
   if ($stmt->execute()) {
     $_SESSION['success'] = "Produk berhasil dihapus!";
-    header("Location: ./?status=success");
+    header("Location: ../../views/profile?status=success");
     exit;
   } else {
     $_SESSION['error'] = "Terjadi kesalahan saat menghapus produk!";
-    header("Location: ./?status=error");
+    header("Location: ../../views/profile?status=error");
     exit;
   }
 }

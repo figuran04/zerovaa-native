@@ -55,7 +55,7 @@ try {
   $stmt->execute();
 
   $conn->commit();
-  header("Location: ../../views/order_success?order_id=$order_id");
+  header("Location: ../../views/order/order_success.php?order_id=$order_id");
   exit;
 } catch (Exception $e) {
   $conn->rollback();

@@ -2,7 +2,7 @@
 require_once '../../config/init.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['is_admin'] != 1) {
-  header("Location: ../login");
+  header("Location: ../../views/login");
   exit;
 }
 
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
   if (empty($category_name)) {
     $_SESSION['error'] = "Nama kategori tidak boleh kosong!";
-    header("Location: ./?status=error");
+    header("Location: ../../views/admin/?status=error");
     exit;
   }
 
@@ -22,11 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
   if ($stmt->execute()) {
     $_SESSION['success'] = "Kategori berhasil ditambahkan!";
-    header("Location: ./?status=success");
+    header("Location: ../../views/admin/?status=success");
     exit;
   } else {
     $_SESSION['error'] = "Terjadi kesalahan saat menambahkan kategori!";
-    header("Location: ./?status=error");
+    header("Location: ../../views/admin/?status=error");
     exit;
   }
 }

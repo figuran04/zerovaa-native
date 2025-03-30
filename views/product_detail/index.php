@@ -14,11 +14,15 @@ ob_start();
 ?>
 
 <div class="flex flex-col md:flex-row items-center gap-6 mt-6">
+  <!-- <pre>
+    <?= print_r($product) ?>
+  </pre> -->
   <img src="../../uploads/<?= htmlspecialchars($product['image']); ?>"
     class="w-64 h-64 object-cover rounded shadow-md"
     alt="<?= htmlspecialchars($product['name']); ?>">
 
   <div>
+    <a href="../profile?id=<?= htmlspecialchars($product['user_id']) ?>" class="text-green-600 font-semibold hover:underline">user<?= htmlspecialchars($product['user_id']) ?></a>
     <h1 class="text-3xl font-bold"><?= htmlspecialchars($product['name']); ?></h1>
     <p class="text-gray-600"><?= htmlspecialchars($product['category']) ?: 'Tanpa Kategori'; ?></p>
     <p class="text-green-600 font-bold text-2xl">Rp<?= number_format($product['price'], 0, ',', '.'); ?></p>

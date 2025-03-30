@@ -64,7 +64,7 @@ $status = isset($_GET['status']) ? $_GET['status'] : null;
       <td><?= htmlspecialchars($row['stock']); ?></td>
       <td>
         <a href="edit_product.php?id=<?= $row['id']; ?>">Edit</a> |
-        <a href="delete_product.php?id=<?= $row['id']; ?>" onclick="return confirm('Hapus produk ini?')">Delete</a>
+        <a href="../../controllers/admin/delete_product.php?id=<?= $row['id']; ?>" onclick="return confirm('Hapus produk ini?')">Delete</a>
       </td>
     </tr>
   <?php endwhile; ?>
@@ -74,7 +74,7 @@ $status = isset($_GET['status']) ? $_GET['status'] : null;
 <h2>Manage Categories</h2>
 
 <!-- Form Tambah Kategori -->
-<form action="add_category.php" method="POST">
+<form action="../../controllers/admin/add_category.php" method="POST">
   <input type="hidden" name="action" value="add">
   <input type="text" name="category_name" placeholder="New Category" class="border" required>
   <button type="submit">Add</button>
@@ -92,7 +92,7 @@ $status = isset($_GET['status']) ? $_GET['status'] : null;
       <td><?= htmlspecialchars($row['name']); ?></td>
       <td>
         <a href="edit_category.php?id=<?= $row['id']; ?>">Edit</a> |
-        <a href="delete_category.php?id=<?= $row['id']; ?>" onclick="return confirm('Hapus kategori ini?')">Delete</a>
+        <a href="../../controllers/admin/delete_category.php?id=<?= $row['id']; ?>" onclick="return confirm('Hapus kategori ini?')">Delete</a>
       </td>
     </tr>
   <?php endwhile; ?>
@@ -117,9 +117,9 @@ $status = isset($_GET['status']) ? $_GET['status'] : null;
       <td><?= $row['role']; ?></td>
       <td><?= $row['status']; ?></td>
       <td>
-        <a href="toggle_role.php?id=<?= $row['id']; ?>">Toggle Role</a> |
-        <a href="block_user.php?id=<?= $row['id']; ?>"><?= ($row['status'] === 'active') ? 'blocked' : 'active'; ?></a> |
-        <a href="delete_user.php?id=<?= $row['id']; ?>" onclick="return confirm('Hapus user ini?')">Delete</a>
+        <a href="../../controllers/admin/toggle_role.php?id=<?= $row['id']; ?>">Toggle Role</a> |
+        <a href="../../controllers/admin/block_user.php?id=<?= $row['id']; ?>"><?= ($row['status'] === 'active') ? 'blocked' : 'active'; ?></a> |
+        <a href="../../controllers/admin/delete_user.php?id=<?= $row['id']; ?>" onclick="return confirm('Hapus user ini?')">Delete</a>
       </td>
     </tr>
   <?php endwhile; ?>
