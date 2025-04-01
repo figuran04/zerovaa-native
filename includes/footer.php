@@ -1,45 +1,45 @@
-<footer class="border-t border-[rgba(0,0,0,0.2)] py-6 mt-12">
-  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+<footer class="border-t border-[rgba(0,0,0,0.2)] bg-gray-50">
+  <div class="container mx-auto px-6 grid grid-cols-1 py-6 md:grid-cols-4 gap-6">
     <div>
-      <h3 class="text-lg font-semibold">Zerovaa</h3>
+      <h3 class="text-lg font-semibold text-[#509717]">Zerovaa</h3>
       <ul class="mt-2 space-y-1">
-        <li>Tentang Kami</li>
-        <li>Karir</li>
-        <li>Blog</li>
-        <li>Kontak</li>
-        <li>Bantuan</li>
+        <li class="cursor-pointer hover:text-[#509717]">Tentang Kami</li>
+        <li class="cursor-pointer hover:text-[#509717]">Karir</li>
+        <li class="cursor-pointer hover:text-[#509717]">Blog</li>
+        <li class="cursor-pointer hover:text-[#509717]">Kontak</li>
+        <li class="cursor-pointer hover:text-[#509717]">Bantuan</li>
       </ul>
     </div>
     <div>
-      <h3 class="text-lg font-semibold">Beli</h3>
+      <h3 class="text-lg font-semibold text-[#509717]">Beli</h3>
       <ul class="mt-2 space-y-1">
-        <li>Cara Belanja</li>
-        <li>Metode Pembayaran</li>
-        <li>Pengiriman</li>
+        <li class="cursor-pointer hover:text-[#509717]">Cara Belanja</li>
+        <li class="cursor-pointer hover:text-[#509717]">Metode Pembayaran</li>
+        <li class="cursor-pointer hover:text-[#509717]">Pengiriman</li>
       </ul>
-      <h3 class="mt-4 text-lg font-semibold">Jual</h3>
+      <h3 class="mt-4 text-lg font-semibold text-[#509717]">Jual</h3>
       <ul class="mt-2 space-y-1">
-        <li>Cara Berjualan</li>
-        <li>Keuntungan Jualan</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-lg font-semibold">Keamanan & Privasi</h3>
-      <ul class="mt-2 space-y-1">
-        <li>Syarat & Ketentuan</li>
-        <li>Kebijakan Privasi</li>
-        <li>Garansi Produk</li>
-        <li>Pusat Resolusi</li>
+        <li class="cursor-pointer hover:text-[#509717]">Cara Berjualan</li>
+        <li class="cursor-pointer hover:text-[#509717]">Keuntungan Jualan</li>
       </ul>
     </div>
     <div>
-      <h3 class="text-lg font-semibold">Ikuti Kami</h3>
+      <h3 class="text-lg font-semibold text-[#509717]">Keamanan & Privasi</h3>
+      <ul class="mt-2 space-y-1">
+        <li class="cursor-pointer hover:text-[#509717]">Syarat & Ketentuan</li>
+        <li class="cursor-pointer hover:text-[#509717]">Kebijakan Privasi</li>
+        <li class="cursor-pointer hover:text-[#509717]">Garansi Produk</li>
+        <li class="cursor-pointer hover:text-[#509717]">Pusat Resolusi</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-[#509717]">Ikuti Kami</h3>
       <div class="flex space-x-3 mt-2">
-        <span class="bg-gray-300 p-2 rounded">📘</span>
-        <span class="bg-gray-300 p-2 rounded">🐦</span>
-        <span class="bg-gray-300 p-2 rounded">📸</span>
+        <span class="bg-[#E2E6CF] p-2 rounded hover:scale-105 hover:bg-[#509717] transition-all cursor-pointer">📘</span>
+        <span class="bg-[#E2E6CF] p-2 rounded hover:scale-105 hover:bg-[#509717] transition-all cursor-pointer">🐦</span>
+        <span class="bg-[#E2E6CF] p-2 rounded hover:scale-105 hover:bg-[#509717] transition-all cursor-pointer">📸</span>
       </div>
-      <h3 class="mt-4 text-lg font-semibold">Unduh Aplikasi</h3>
+      <h3 class="mt-4 text-lg font-semibold text-[#509717]">Unduh Aplikasi</h3>
       <div class="flex space-x-2 mt-2">
         <button class="bg-black text-white px-4 py-1 rounded text-sm">
           App Store
@@ -50,7 +50,7 @@
       </div>
     </div>
   </div>
-  <div class="border-t border-[rgba(0,0,0,0.2)] mt-6 pt-4 text-center text-sm">
+  <div class="border-t border-[rgba(0,0,0,0.2)] text-[#509717] py-4 text-center text-sm bg-[#E2E6CF]">
     © 2025 Zerovaa. Semua hak dilindungi.
   </div>
 </footer>
